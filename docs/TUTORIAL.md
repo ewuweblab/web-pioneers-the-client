@@ -191,13 +191,7 @@ In `src/pages/index.astro`, delete these lines near the bottom:
 
 ### 💾 Commit
 
-```bash
-git add -A
-```
-
-```bash
-git commit -m "Remove sample page"
-```
+- commit changes "Remove sample page"
 
 ---
 
