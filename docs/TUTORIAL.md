@@ -486,52 +486,9 @@ The finished site uses Tim Berners-Lee, Jeffrey Zeldman, and Molly Holzschlag. Y
 
 ### 6.3 Look at what Keystatic saved
 
-Go back to VS Code. Keystatic created two new files:
-
-- `src/content/pioneers/tim-berners-lee.mdoc`
-- `public/images/pioneers/tim-berners-lee/image.jpg`
-
-Open the `.mdoc` file. It looks something like this:
-
-```markdown
----
-title: Tim Berners-Lee
-image: /images/pioneers/tim-berners-lee/image.jpg
-intro: >-
-  Invented the World Wide Web at CERN in 1989, creating HTML, URLs and HTTP.
-  Founded the W3C in 1994 and co-founded the Open Data Institute.
-homepage: https://www.w3.org/People/Berners-Lee/
----
-Tim Berners-Lee was born in London in 1955...
-
-## Keeping the web open
-
-- **1994:** Founded the World Wide Web Consortium (W3C) at MIT...
-```
-
-The form fields went into the **frontmatter** between the `---` lines. The **Content** field became the body below it. You could write this file by hand and get the same result. Keystatic is just a friendlier way to do it.
-
-### 6.4 Add two more pioneers
-
-Repeat 6.2 for two more people.
-
-### ✅ Check it
-
-- The home page lists all three pioneers in A–Z order.
-- Clicking a name opens its page with the name and bio.
-- The photo, intro, and homepage **don't** show yet. You'll fix that next.
-
-### 💾 Commit
-
-Keystatic only writes files. It doesn't commit them, so you need to:
-
-```bash
-git add -A
-```
-
-```bash
-git commit -m "Add pioneer content"
-```
+* Download sample Web Pioneers content
+* https://github.com/ewuweblab/web-pioneers-the-client/raw/main/docs/pioneers%20sample%20content.zip
+* Add content for each Pioneer
 
 ---
 
