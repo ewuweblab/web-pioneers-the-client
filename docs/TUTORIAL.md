@@ -2,8 +2,8 @@
 
 In this tutorial you start from the **Astro + Keystatic + Cloudflare starter** and turn it into **Web Pioneers**: a small site with one page for each person who helped build the web.
 
-- **Start:** [ewuweblab/astro-keystatic-cloudflare-starter](https://github.com/ewuweblab/astro-keystatic-cloudflare-starter)
-- **Finish:** [ewuweblab/web-pioneers-the-client](https://github.com/ewuweblab/web-pioneers-the-client)
+- **Starter:** [ewuweblab/astro-keystatic-cloudflare-starter](https://github.com/ewuweblab/astro-keystatic-cloudflare-starter)
+- **Finished Example:** [ewuweblab/web-pioneers-the-client](https://github.com/ewuweblab/web-pioneers-the-client)
 
 When you're done, your site will have:
 
@@ -11,8 +11,6 @@ When you're done, your site will have:
 - One page per pioneer with a photo, a short intro, a link to their homepage, and a longer bio
 - A content editor at `/keystatic` where you can add and edit pioneers without touching code
 - A shared layout, so every page has the same `<head>` and footer
-
-> **How to use this guide:** Work through the phases in order. Each phase ends with a **✅ Check it** step and a **💾 Commit** step. If something breaks, you can always go back to your last commit. If you get stuck, compare your files with the finished repo.
 
 ---
 
@@ -72,19 +70,12 @@ Install these tools first:
 2. Click the green **Use this template** button, then **Create a new repository**.
 3. Name it `web-pioneers` (or anything you like) and click **Create repository**.
 
-### 1.2 Clone it to your computer
+### 1.2 Clone it to your local computer
 
-On your new repo's page, click **Code** and copy the URL. Then in a terminal (replace `YOUR-USERNAME`):
-
-```bash
-git clone https://github.com/YOUR-USERNAME/web-pioneers.git
-```
-
-```bash
-cd web-pioneers
-```
-
-Open the folder in VS Code.
+1. VS Code
+2. Clone repository
+3. Enter the URL to your repo
+4. Finish local setup 
 
 ### 1.3 Install and start the dev server
 
