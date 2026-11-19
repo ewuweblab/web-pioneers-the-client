@@ -20,13 +20,19 @@ const homepageLabel = homepage?.replace(/^https?:\/\//, '').replace(/\/$/, '');
 
 <BaseLayout title={pioneer.data.title}>
 	<p><a href="/">← All pioneers</a></p>
+	
 	<h1>{pioneer.data.title}</h1>
+	
 	{pioneer.data.image && <img src={pioneer.data.image} alt={pioneer.data.title} />}
+	
 	{pioneer.data.intro && <p>{pioneer.data.intro}</p>}
+	
 	{homepage && (
 		<p>
 			<a href={homepage}>{homepageLabel}</a>
 		</p>
 	)}
+	
 	<Content />
+
 </BaseLayout>

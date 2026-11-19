@@ -11,7 +11,6 @@ const pioneers = (await getCollection('pioneers')).sort((a, b) =>
 <BaseLayout>
 	<h1>{SITE_TITLE}</h1>
 
-	<h2>Pioneers</h2>
 	{
 		pioneers.length > 0 ? (
 			<ul>
