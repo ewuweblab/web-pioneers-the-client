@@ -15,19 +15,21 @@ export default config({
   storage: useCloud ? { kind: 'cloud' } : { kind: 'local' },
   cloud: { project: KEYSTATIC_CLOUD_PROJECT },
   collections: {
-    posts: collection({
-      label: 'Posts',
+    pioneers: collection({
+      label: 'Pioneers',
       slugField: 'title',
-      path: 'src/content/posts/*',
+      path: 'src/content/pioneers/*',
       format: { contentField: 'content' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
-        // Saved to public/images/posts/<slug>/image.<ext>, served from /images/posts/<slug>/.
+        // Saved to public/images/pioneers/<slug>/image.<ext>, served from /images/pioneers/<slug>/.
         image: fields.image({
           label: 'Image',
-          directory: 'public/images/posts',
-          publicPath: '/images/posts/',
+          directory: 'public/images/pioneers',
+          publicPath: '/images/pioneers/',
         }),
+        intro: fields.text({ label: 'Intro', multiline: true }),
+        homepage: fields.url({ label: 'Homepage' }),
         content: fields.markdoc({ label: 'Content' }),
       },
     }),
